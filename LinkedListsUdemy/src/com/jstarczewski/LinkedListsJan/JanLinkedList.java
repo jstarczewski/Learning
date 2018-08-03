@@ -46,18 +46,18 @@ public class JanLinkedList {
     }*/
 
     /*
-    * Zbyt wiele powtorzen compareTo() itp
-    *
-    * Przerobic to na jedna wielka petle
-    *
-    * Zrobic wersje rekrusyjna
-    *
-    *
-    * */
+     * Zbyt wiele powtorzen compareTo() itp
+     *
+     * Przerobic to na jedna wielka petle
+     *
+     * Zrobic wersje rekrusyjna
+     *
+     *
+     * */
 
 
     public boolean add(String value) {
-        if (root.getValue()==null) {
+        if (root.getValue() == null) {
             root.setValue(value);
             return true;
         }
@@ -69,8 +69,7 @@ public class JanLinkedList {
             item.setNext(root);
             root = item;
             return true;
-        }
-        else {
+        } else {
             while (currentRoot.getNext() != null) {
                 if (currentRoot.getValue().equals(value))
                     return false;
