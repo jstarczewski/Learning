@@ -18,9 +18,9 @@ public class Main {
         myLinkedLists.addItem(new Node("Warszawa"));
         myLinkedLists.addItem(new Node("Gdynia"));
         myLinkedLists.addItem(new Node("Barczewo"));
-        myLinkedLists.traverse(myLinkedLists.getRoot());
         System.out.println("Usuwamy");
         myLinkedLists.removeItem(new Node("Siedlce"));
-        myLinkedLists.traverse(myLinkedLists.getRoot());
+
+        myLinkedLists.traverse(new Node("Chojnice"));
     }
 }

@@ -1,5 +1,7 @@
 package com.jstarczewski;
 
+import java.util.List;
+
 public class MyLinkedLists implements NodeList {
 
     private ListItem root = null;
@@ -73,10 +75,20 @@ public class MyLinkedLists implements NodeList {
 
     @Override
     public void traverse(ListItem item) {
-        ListItem currentItem = root;
-        while (currentItem.next() != null) {
-            System.out.println(currentItem.value + "");
-            currentItem = currentItem.next();
+
+        if (item==null) {
+            System.out.println("Null");
         }
+        else {
+            System.out.println(item.getValue());
+        }
+
+        /*ListItem currentItem = root;
+        if (item!=null) {
+            while (!currentItem.getValue().equals(item.getValue()) && currentItem.next()!=null) {
+                currentItem = currentItem.next();
+            }
+            System.out.println(currentItem.getValue());
+        }*/
     }
 }
