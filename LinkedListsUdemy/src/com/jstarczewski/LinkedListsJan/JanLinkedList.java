@@ -44,6 +44,18 @@ public class JanLinkedList {
             return false;
         }
     }*/
+
+    /*
+    * Zbyt wiele powtorzen compareTo() itp
+    *
+    * Przerobic to na jedna wielka petle
+    *
+    * Zrobic wersje rekrusyjna
+    *
+    *
+    * */
+
+
     public boolean add(String value) {
         if (root.getValue()==null) {
             root.setValue(value);
@@ -59,9 +71,9 @@ public class JanLinkedList {
             return true;
         }
         else {
-            if (currentRoot.getValue().equals(value))
-                return false;
             while (currentRoot.getNext() != null) {
+                if (currentRoot.getValue().equals(value))
+                    return false;
                 if (currentRoot.getValue().compareTo(item.getValue()) > 0 && currentRoot.getNext().getValue().compareTo(item.getValue()) < 0) {
                     item.setPrevious(currentRoot);
                     item.setNext(currentRoot.getNext());
@@ -69,14 +81,15 @@ public class JanLinkedList {
                     currentRoot.setNext(item);
                     return true;
                 }
-                if (currentRoot.getValue().equals(value))
-                    return false;
                 currentRoot = currentRoot.getNext();
             }
-            currentRoot.setNext(item);
-            item.setPrevious(currentRoot);
-            item.setNext(null);
-            return true;
+            if (!currentRoot.getValue().equals(value)) {
+                currentRoot.setNext(item);
+                item.setPrevious(currentRoot);
+                item.setNext(null);
+                return true;
+            }
+            return false;
         }
     }
 
