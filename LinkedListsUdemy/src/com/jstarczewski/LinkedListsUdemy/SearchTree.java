@@ -1,4 +1,4 @@
-package com.jstarczewski;
+package com.jstarczewski.LinkedListsUdemy;
 
 public class SearchTree implements NodeList {
 

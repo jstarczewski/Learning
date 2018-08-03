@@ -1,4 +1,4 @@
-package com.jstarczewski;
+package com.jstarczewski.LinkedListsUdemy;
 
 public abstract class ListItem {
     protected ListItem rightLink = null;

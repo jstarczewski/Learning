@@ -1,6 +1,4 @@
-package com.jstarczewski;
-
-import java.util.List;
+package com.jstarczewski.LinkedListsUdemy;
 
 public class MyLinkedLists implements NodeList {
 
