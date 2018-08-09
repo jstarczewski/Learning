@@ -44,6 +44,6 @@ public class BankAccountTest {
 
     @org.junit.AfterClass
     public static void after() {
-        
+
     }
 }
