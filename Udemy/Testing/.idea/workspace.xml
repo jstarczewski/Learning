@@ -35,8 +35,8 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="372">
+              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -93,9 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,7 +115,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,7 +153,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BankAccountTest.withdraw">
+  <component name="RunManager" selected="JUnit.BankAccountTest">
+    <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jstarczewski.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Testing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jstarczewski" />
+      <option name="MAIN_CLASS_NAME" value="com.jstarczewski.BankAccountTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="BankAccountTest.deposite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -167,31 +192,6 @@
       <option name="PACKAGE_NAME" value="com.jstarczewski" />
       <option name="MAIN_CLASS_NAME" value="com.jstarczewski.BankAccountTest" />
       <option name="METHOD_NAME" value="deposite" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BankAccountTest.dummyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jstarczewski.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Testing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jstarczewski" />
-      <option name="MAIN_CLASS_NAME" value="com.jstarczewski.BankAccountTest" />
-      <option name="METHOD_NAME" value="dummyTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -295,19 +295,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.dummyTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.deposite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance_withdraw" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.withdraw" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.deposite" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance_withdraw" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.withdraw" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.withdraw" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance_withdraw" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.deposite" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.dummyTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.withdraw" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance_withdraw" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.getBalance" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.deposite" />
       </list>
     </recent_temporary>
   </component>
@@ -325,21 +325,22 @@
       <option name="presentableId" value="Default" />
       <updated>1533724257565</updated>
       <workItem from="1533724264758" duration="1546000" />
-      <workItem from="1533806440134" duration="1848000" />
+      <workItem from="1533806440134" duration="2447000" />
+      <workItem from="1533838763593" duration="1039000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BankAccountTest - 2018.08.08 at 12h 42m 19s.xml">
-      <configuration name="BankAccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountTest - 2018.08.08 at 12h 42m 32s.xml">
-      <configuration name="BankAccountTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BankAccountTest - 2018.08.08 at 12h 46m 50s.xml">
       <configuration name="BankAccountTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BankAccountTest - 2018.08.09 at 11h 29m 11s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest - 2018.08.09 at 20h 31m 39s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest - 2018.08.09 at 20h 33m 26s.xml">
       <configuration name="BankAccountTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BankAccountTest_deposite - 2018.08.09 at 11h 36m 03s.xml">
@@ -357,9 +358,12 @@
     <history-entry file="BankAccountTest_withdraw - 2018.08.09 at 11h 54m 07s.xml">
       <configuration name="BankAccountTest.withdraw" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BankAccountTest_withdraw - 2018.08.09 at 11h 54m 29s.xml">
+      <configuration name="BankAccountTest.withdraw" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3394000" />
+    <option name="totallyTimeSpent" value="5032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -425,6 +429,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/BankAccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
@@ -449,8 +477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="372">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
           <folding />
         </state>
       </provider>
