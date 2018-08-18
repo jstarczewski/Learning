@@ -6,10 +6,17 @@ public class Migratory {
 		Collections.sort(arr);
 		int count = 0;
 		int max = 0;
-		int[] ar = new int[arr.size()];
+		int max2 = 0;
+		int count2 = 0;
 		for (int i = 1; i<arr.size(); i++) {
+			count++;
+			if (arr.get(i)!=arr.get(i-1) && count >= count2 && arr.get(i) <= arr.get(i-1)) {
+				count2=count;
+				count=0;
+				max = arr.get(i-1);
+			}
 		}
-		return 0;
+		return max;
 	}
 
 	public static void main(String[] args) {
