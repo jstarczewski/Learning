@@ -3,35 +3,33 @@ import java.util.*;
 public class Migratory {
 
 	static int migratoryBirds(List<Integer> arr) {
-		Collections.sort(arr);
-		int count = 0;
-		int max = 0;
-		int max2 = 0;
-		int count2 = 0;
-		for (int i = 1; i<arr.size(); i++) {
-			count++;
-			if (arr.get(i)!=arr.get(i-1) && count >= count2 && arr.get(i) <= arr.get(i-1)) {
-				count2=count;
-				count=0;
-				max = arr.get(i-1);
+		if (arr.size() < 5 && arr.size() > 2* 100000)
+			return -1;
+		int[] birds = new int[arr.size()];
+		for(Integer i : arr) {
+			if (i != 1 && i!= 2 && i!=3 && i!=4 && i!=5)
+				return -1;
+			birds[i]++;
+		}
+		int max = birds[0];
+		int maxIndex = 0;
+		for(int i = 0; i<birds.length; i++) {
+			if (birds[i]>max) {
+				max = birds[i];
+				maxIndex = i;
 			}
 		}
-		return max;
-	}
+		return maxIndex;
+	}	
 
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
-		list.add(2);
-		list.add(3);
+		list.add(4);
+		list.add(4);
 		list.add(4);
 		list.add(5);
-		list.add(4);
 		list.add(3);
-		list.add(2);
-		list.add(1);
-		list.add(3);
-		list.add(4);
 		System.out.println(migratoryBirds(list));
 	}
 
