@@ -9,7 +9,6 @@ public class Chaos {
 		int movesMade = 0;
 		if (q.length < 100000 && q.length > 0) {
 		while (i>0) {
-			distance = 0;
 			while(q[i-1] > q[i] && i < q[i-1]) {
 				tmp = q[i];
 				q[i] = q[i-1];
@@ -17,10 +16,8 @@ public class Chaos {
 				distance++;
 				movesMade++;
 				if (i<q.length-1)
-				i++;
+					i++;
 			}
-			if (distance > 2)
-				chaotic = true;
 			i--;
 		}	
 
@@ -33,7 +30,7 @@ public class Chaos {
 	}
 
 	public static void main(String[] args) {
-		int[] q = {5,1,2,3,7,8,6,4};
+		int[] q = {4,3,1,2};
 
 
 		// find movesMade - > do permutation to on on the left
