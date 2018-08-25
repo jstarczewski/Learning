@@ -35,7 +35,7 @@ class Message {
 
     }
 
-     
+
 
     public synchronized void write(String message) {
         while (!empty) {
