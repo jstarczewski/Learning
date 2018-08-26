@@ -64,7 +64,7 @@ class Writer implements Runnable {
     @Override
     public void run() {
         String messages[] = {"187 Strassenbande",
-                "Wolke 7",
+                "Random commit",
                 "Neue Shue kaufen durch die Stadt laufen",
                 "Schnapp krokodile schnapppp"};
 
