@@ -1,11 +1,21 @@
 package com.jstarczewski;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
 
 
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Jan\\sqlite-tools-win32-x86-3240000\\sqlite-tools-win32-x86-3240000\\baza.db");
+        }
+        catch(SQLException e) {
+
+        }
         Countdown countdown1 = new Countdown();
 
 
@@ -17,6 +27,7 @@ public class Main {
         t1.start();
         t2.start();
     }
+
 }
 
 
