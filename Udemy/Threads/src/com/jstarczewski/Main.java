@@ -11,10 +11,16 @@ public class Main {
 
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Jan\\sqlite-tools-win32-x86-3240000\\sqlite-tools-win32-x86-3240000\\baza.db");
+            String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+    //        Class.forName(driverName);
+
+
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Jan\\databases\\baza.db");
         }
         catch(SQLException e) {
-
+            System.out.println("nie pykl");
+    //    } catch (ClassNotFoundException e) {
+     //       e.printStackTrace();
         }
         Countdown countdown1 = new Countdown();
 
