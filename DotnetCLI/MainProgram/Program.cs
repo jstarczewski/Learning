@@ -2,11 +2,12 @@
 
 namespace MainProgram
 {
-    class Program
-    {
+    class Program {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Stara Stevena");
+	    
+            Console.WriteLine("Stara Stevena");
         }
     }
 }

@@ -1,0 +1,14 @@
+fun main(args : Array<String>) {
+	println(canAddFish(10, listOf(3,3,3)))
+	println(canAddFish(10, listOf(3,3,3)))
+	println(canAddFish(10, listOf(3,3,3)))
+	println(canAddFish(10, listOf(3,3,3)))
+}
+
+fun canAddFish(size : Int, currentFish : List<Int>, fishSize : Int = 2, hasDecorations : Boolean = true) : Boolean{
+		if(hasDecorations) 
+		 	return ((size*0.8-(currentFish.sum())-fishSize) >= 0) 
+		else 
+			return ((size-(currentFish.sum())-fishSize) >= 0)
+
+}
