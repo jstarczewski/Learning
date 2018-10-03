@@ -3,6 +3,20 @@ fun main(args : Array<String>) {
 	println(waterfall(100))
 	println(waterfallOtherWay(100))
 	dirtyProcessor() 
+
+	/*
+	 	The difference between 
+			val random1 = random() is that this random1 is assigned at compile time and generated only once when referenced	
+			and	
+			val random2 = {random()} is a lambda so when used is generated new value 
+
+			random1 has a value assigned at compile time, and the value never changes when the variable is accessed.
+
+			random2 has a lambda assigned at compile time, and the lambda is executed every time the variable is referenced, returning a different value.i
+	 
+	 
+	 */
+
 }
 var waterfallOtherWay : (Int) -> Int = { dirty -> dirty/10 }
 var waterfall = { dirty : Int -> dirty/10 }

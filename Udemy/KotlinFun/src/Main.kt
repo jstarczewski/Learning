@@ -28,11 +28,11 @@ fun fishDayFood(day: String): String {
     return when (day) {
         "Monday" -> "dsbraitak"
         "Teusday" -> "policja"
-        "Wednesday" -> "elo"
+        "Wednesday" -> "aquarium"
         "Czwartek" -> "xd"
         "Piatek" -> "sx"
         "Sobota" -> "jebbac"
-        "Sontag" -> "elo"
+        "Sontag" -> "aquarium"
         else -> "Twoja stara"
     }
 
