@@ -17,21 +17,6 @@ fun buildAquarium() {
  	$ kotlinc Main.kt Aquarium.kt -include-runtime -d Main.jar
 	$ java -jar Main.jar
  */
-
-
- /*
-  	In kotlin everything is public by default
-
-	--> Package Visibility 
-		public - default (Everywhere)
-		private - File
-		internal - Module
-	--> Class visibility
-		public - Default, Class and public members
-		private - Inside class, subclasses CANT see
-		protected - Inside class, Subclass CAN see
-		internal - Module (classes compiled togheter)
-  */
  
  
  

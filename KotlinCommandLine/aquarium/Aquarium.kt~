@@ -20,7 +20,6 @@ public class Aquarium {
 			return width*height*length / 1000
 		}
 		set(value) {height = (value*1000)/ (width*length)}
-		// 20000/2000 = 10 -> ok
 
 }
 
