@@ -15,7 +15,7 @@ fun buildAquariumConstructor() {
 	//var smallAquarim = Aquarium(20,15,30)
 	// to make it more readable do like below ->
 		var smallAquarium = AquariumConstructor(length = 20, height = 15, width = 30)
-		println("${smallAquarium.length}")
+		println("${smallAquarium.length} to dlugosc")
 }
 /*
  	$ kotlinc Main.kt Aquarium.kt -include-runtime -d Main.jar

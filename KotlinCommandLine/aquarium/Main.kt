@@ -1,10 +1,10 @@
 package aquarium
 
 fun main(args : Array<String>) {
-	buildAquarium()	
+	buildAquariumConstructor()	
 }
-fun buildAquarium() {
-	val myAquarium = Aquarium()
+fun buildAquariumConstructor() {
+	val myAquarium = AquariumConstructor(5,10,15)
 	println("Length: ${myAquarium.length}"
 	+ "Width: + ${myAquarium.width}"
 	+ "Height: + ${myAquarium.height}"
@@ -12,7 +12,13 @@ fun buildAquarium() {
 	myAquarium.volume = 20
 	println(myAquarium.volume)
 	println(myAquarium.height)
+	//var smallAquarim = Aquarium(20,15,30)
+	// to make it more readable do like below ->
+		var smallAquarium = AquariumConstructor(length = 20, height = 15, width = 30)
+
+		println("${smallAquarium.length}")
 }
+
 /*
  	$ kotlinc Main.kt Aquarium.kt -include-runtime -d Main.jar
 	$ java -jar Main.jar
