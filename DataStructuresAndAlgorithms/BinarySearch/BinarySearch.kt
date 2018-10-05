@@ -12,10 +12,20 @@ fun findBinary(arr: Array<Int>, number : Int) : Int {
 
 	var min = 0;
 	var max = arr.size-1
-	var mid = arr.size/2
+	var mid = (max - min)/2
+	while (min<max) {
 
-	while (min<=max) {
-	
+		if (number > arr[mid]) {
+			min = mid + 1
+			mid = min + (max - min)/2
+		} else if (number < arr[mid]) {
+			max = mid - 1
+			mid = min + (max - min)/2
+		} else {
+			return mid 
+		}
+
+		/*
 		when(number) {
 			arr[min] -> return min
 			arr[max] -> return max
@@ -31,7 +41,7 @@ fun findBinary(arr: Array<Int>, number : Int) : Int {
 				}
 			}
 		}
-		
+		*/
 	}
 	
 
@@ -47,6 +57,6 @@ fun main(args: Array<String>) {
 	
 	var arr = arrayOf(1,2,4,56,12,3,1,22)
 	arr.sort()
-	println("Index is ${findBinary(arr, 56)}")
+	println("Index is ${findBinary(arr, 22)}")
 
 }
