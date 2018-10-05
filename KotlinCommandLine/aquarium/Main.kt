@@ -2,6 +2,7 @@ package aquarium
 
 fun main(args : Array<String>) {
 	buildAquariumConstructor()	
+	makeFish()	 
 }
 fun buildAquariumConstructor() {
 	val myAquarium = AquariumConstructor(5,10,15)
@@ -38,7 +39,31 @@ fun buildAquariumConstructor() {
 		protected - Inside class, Subclass CAN see
 		internal - Module (classes compiled togheter)
   */
+
+
+/*
+ 		That's my bo below <3 
  
- 
+ */
+
+fun feedFish(fish: FishAction) {
+
+
+	// make some food then ? XDD
+	fish.eat()
+
+}
+
+
+fun makeFish() {
+
+	val shark = Shark()
+	val placo = Plecostomus()
+	println("Shark color: ${shark.color} and Placo color: ${placo.color}")
+
+	shark.eat()
+	pleco.eat()
+}
+
  
 
