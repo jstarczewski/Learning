@@ -85,7 +85,9 @@ fun genericExample() {
 
 
 
+fun <T: WaterSupply> isWaterClean(aquarium: Aquarium<T>) {
 
+}
 
 
 
