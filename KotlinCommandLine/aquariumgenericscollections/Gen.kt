@@ -31,7 +31,15 @@ class Aquarium<out T : WaterSupply>(val waterSupply : T) {
 		println("adding water from $waterSupply")
 	}
 
+	// generic function inside a class is a generic method
+
+	// return T if T is R
+	fun <reified/ R: WaterSupply> hasWaterSupplyOfType() = waterSupply is R
+
 }
+// wat is inline -> check	
+inline fun <reified T: WaterSupply> WaterSupply.isOfType() = this is T
+
 
 fun genericExample() {
 
@@ -41,6 +49,10 @@ fun genericExample() {
 	val cleaner = TapWaterCleaner()
 	val aquarium: Aquarium<TapWater> = Aquarium(TapWater())
 	aquarium.addWater(cleaner)
+	println(aquarium.hasWaterSupplyOfType<TapWater>())
+	println(aquarium.waterSupply.isOfType<LakeWater>())
+	println(aquarium.waterSupply.isOfType<TapWater>())
+	
 
 /*
 	val aquarium = Aquarium(TapWater())
@@ -86,8 +98,13 @@ fun genericExample() {
 
 
 fun <T: WaterSupply> isWaterClean(aquarium: Aquarium<T>) {
-
 }
-
+/*
+ 
+ 	check -> inline function
+	refined ->    
+ 
+ 
+ */
 
 
