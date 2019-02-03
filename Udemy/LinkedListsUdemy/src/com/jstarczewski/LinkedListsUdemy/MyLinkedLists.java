@@ -1,6 +1,8 @@
 package com.jstarczewski.LinkedListsUdemy;
 
+
 public class MyLinkedLists implements NodeList {
+
 
     private ListItem root = null;
 
@@ -74,10 +76,9 @@ public class MyLinkedLists implements NodeList {
     @Override
     public void traverse(ListItem item) {
 
-        if (item==null) {
+        if (item == null) {
             System.out.println("Null");
-        }
-        else {
+        } else {
             System.out.println(item.getValue());
         }
 
